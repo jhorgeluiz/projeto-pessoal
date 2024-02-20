@@ -5,119 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O GLOBO</title>
       <STYle>
+       
          header {  /* fundo azul*/
            background-color:#1E4C9A;
-           margin-top: 50px;
-           margin-bottom: 60px;  /* margem dos subtemas */
-           height: 13vh;
+           height: 8vh;
+           max-width: 1280px;
+           min-width: 318px;
+           margin: auto;
+           margin-top: 40px;   
+           margin-bottom: 50px;       
+          
+         }
+
+         main {
+            background-color: white;
+            padding-top: 3px;
+            padding-bottom: 10px;
+            max-width: 800px;
+            min-width: 315px;
+            margin: auto;
+            box-shadow: 1px 1px 1px rgb(180, 178, 178);
          }
 
          body {   /* fundo branco*/
            background-color:white;
            margin: 0px;
+           
+           
+           
          }
 
          .fundosubtitulos {
             background-color: white;
             position: relative;
-            top: 24px;
+            top: 5px;
             margin: 0px;
             height: 30px;
             box-shadow: 1px 01px 1px rgb(182, 181, 181);
          }
 
+         main p {
+            margin-left: 10px;
+            padding-top: 3px;
+            padding-left: px;
+
+         }
+
          #principal {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 60px;
+            font-size: 30px;
             color: rgb(255, 255, 255);
             position: absolute;
-            left: 140px;
-            top: 20px;
+            left: 50px;
+            top: 27px;
          }
 
          .botaomenu {
-            width: 20px;
+            width: 13px;
             position: absolute;
-            left: 40px;
-            top: 80px;
+            left: 10px;
+            top: 56px;
          }
 
          .menu {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
+            font-size: 8px;
             color: white;
             position: absolute;
-            left: 65px;
-            top: 72px;
+            left: 25px;
+            top: 54px;
          }
 
          .botaobuscar {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            color: white;
+            font-size: 8px;
+            color: rgb(255, 255, 255);
             text-align: right;
             position: relative;
-            right:  150px;
-            top: 35px;
+            right:  60px;
+            top: 16px;
          }
 
          .botaoentrar {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            color: white;
+            font-size: 8px;
+            color: rgb(255, 255, 255);
             text-align: right;
             position: relative;
-            right:  50px;
-            top: 10px;
+            right:  8px;
+            top: 3px;
          }
 
          .login {  /*ícone*/
             position: fixed;
-            width: 20px;
-            right: 95px;
-            top: 85px;
+            width: 12px;
+            right: 33px;
+            top: 54px;
          }
 
          .pesquisar {   /*ícone*/
             position: fixed;
-            width: 20px;
-            right: 200px;
-            top: 85px;
+            width: 12px;
+            right: 90px;
+            top: 54px;
          }
 
          .temas {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 13px;
-            text-align: center;
-            color: black;
+            text-align: justify;
+            margin-left:  10px;
+            color: rgb(128, 122, 122);
             position: relative;
-            top: 7px;
+            top: 6px;
 
+         }
+
+         img {
+            width:auto;
          }
 
       </STYle>
 
    </head>
 
-   <header>
-      <h1 id="principal">O GLOBO</h1>    <h1 class="menu">Menu</h1>
-      <h1 class="botaobuscar">Buscar</h1>   <h1 class="botaoentrar">Entrar</h1>
-
-      <img class="botaomenu" src="menu.png" alt="botaomenu">
-      <img class="login" src="person.png" alt="login">
-      <img class="pesquisar" src="search.png" alt="buscar">
-
-      <div class="fundosubtitulos">
-       <p class="temas">Última | Politicas | Brasil | Rio | Mundo | Economia | Saude | Cultura | Esporte | Colunistas | Opinião | Clube | Newletters | Edição digital</p>
-      </div>
-
-      
-   </header>
-
    <body>
+      <header>
+         <h1 id="principal">O GLOBO</h1>    <h1 class="menu">Menu</h1>
+         <h1 class="botaobuscar">Buscar</h1>   <h1 class="botaoentrar">Entrar</h1>
+   
+         <img class="botaomenu" src="menu.png" alt="botaomenu">
+         <img class="login" src="person.png" alt="login">
+         <img class="pesquisar" src="search.png" alt="buscar">
+   
+         <div class="fundosubtitulos">
+          <p class="temas">Impressos | Última</p>
+         </div>
+      </header>
+
       <main>
-        
-      </main>       
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, unde saepe illo maxime reiciendis quisquam vitae! Rerum, quisquam! Iure dignissimos eaque cumque molestiae magni perspiciatis asperiores alias dolorem consequatur saepe?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error, enim unde tempore ex maiores voluptatum et velit minima a ipsum nisi nemo. Molestias consequatur placeat repudiandae debitis iste odit.</p>
+         
+      </main>
    </body>
 
 </html>
