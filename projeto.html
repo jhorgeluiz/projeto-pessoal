@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O GLOBO</title>
       <STYle>
-       
          header {  /* fundo azul*/
            background-color:#1E4C9A;
            height: 8vh;
-           max-width: 800px;
-           min-width: 324px;
-           margin: auto;
+           max-width: 1400px;
+           min-width: 325px;
+         
            margin-top: 40px;   
-           margin-bottom: 50px;  
+           margin-bottom: 20px;  
                
           
-         }
-
-         main {
-            background-color: white;
-            padding-top: 3px;
-            
-            padding-bottom: 10px;
-           
-            margin:auto;
-            box-shadow: 1px 1px 5px rgb(180, 178, 178);
          }
 
          body {   /* fundo branco*/
            background-color:white;
            margin: 0px;
+         }
+
+         main {
+            background-color: white;
+            min-width: 325px;
+            max-width: 600px;
+            padding-top: 3px;
+            padding-bottom: 10px;
+            margin:auto;
+            box-shadow: 1px 1px 5px rgb(180, 178, 178);
          }
 
          .fundosubtitulos {
@@ -42,20 +41,47 @@
             box-shadow: 1px 01px 1px rgb(182, 181, 181);
          }
 
-         p {
-            font-family: 'Times New Roman', Times, serif;
+         main p {
+            font-family: 'Segoe UI', Verdana, sans-serif;
             text-align: justify;
             text-indent: 20px;
             font-size: 15px;
             margin-right: 5px;
             margin-left: 5px;
             padding-top: 3px;
-           
+         }
 
+         main img {
+            background-color: gray;
+            padding: 2px;
+            max-height: 150px;
+            min-width: 320px;
+            max-width: 600px;
+            display: block;
+            margin: auto;
+            width: 80%;
+         }
+
+         main a {
+            background-color: #c5c5c9;
          }
 
          h2 {
-            background-color: antiquewhite;
+            background-image: linear-gradient(to right, rgb(235, 231, 231), white);
+            box-shadow: 1px 1px 1px #f8f7f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(53, 50, 50);
+            padding-left: 5px;
+         }
+
+         h3 {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-decoration: underline;
+            font-size: 15px;
+            color: rgb(53, 50, 50);
+            padding-left: 5px;
+            margin-bottom: 5px;
+
          }
 
          #principal {
@@ -63,8 +89,8 @@
             font-size: 30px;
             color: rgb(255, 255, 255);
             position: absolute;
-            left: 50px;
-            top: 27px;
+            left: 53px;
+            top: 25px;
          }
 
          .botaomenu {
@@ -106,19 +132,19 @@
          .login {  /*ícone*/
             position: absolute;
             width: 12px;
-            right: 33px;
+            right: 50px;
             top: 54px;
          }
 
          .pesquisar {   /*ícone*/
             position: absolute;
             width: 12px;
-            right: 90px;
+            right: 107px;
             top: 54px;
          }
 
          .temas {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 13px;
             text-align: justify;
             margin-left:  10px;
@@ -128,8 +154,21 @@
 
          }
 
-         img {
-            width:auto;
+         .seta::before {
+            content: '\27A1';
+         }
+
+         .link::after {
+            content:'\1F517';
+         }
+
+         footer {
+            background-color: rgb(100, 98, 98);
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 13px;
+            text-align: center;
+            padding: 3px;
          }
 
       </STYle>
@@ -138,27 +177,46 @@
 
    <body>
       <header>
-         <h1 id="principal">O GLOBO</h1>    <h1 class="menu">Menu</h1>
-         <h1 class="botaobuscar">Buscar</h1>   <h1 class="botaoentrar">Entrar</h1>
+         <h1 id="principal">O GLOBO</h1> 
+
+         <a href="https://www.google.com.br/?hl=pt-BR">
+            <h1 class="menu">Menu</h1></a>
+
+         <a href="https://www.google.com.br/?hl=pt-BR">
+            <h1 class="botaobuscar">Buscar</h1></a>
+
+         <a href="https://www.google.com.br/?hl=pt-BR"><h1 class="botaoentrar">Entrar</h1></a>
    
-         <img class="botaomenu" src="menu.png" alt="botaomenu">
+         <a href="https://www.google.com.br/?hl=pt-BR"><img class="botaomenu" src="menu.png" alt="botaomenu"></a>
+
          <img class="login" src="person.png" alt="login">
          <img class="pesquisar" src="search.png" alt="buscar">
    
          <div class="fundosubtitulos">
-          <p class="temas">Impressos | Última</p>
+          <p class="temas"><a href="#">Impressos</a> | <a href="#">Última</a></p>
          </div>
       </header>
 
       <main>
          <h2>Fortaleza</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, unde saepe illo maxime reiciendis quisquam vitae! Rerum, quisquam! Iure dignissimos eaque cumque molestiae magni perspiciatis asperiores alias dolorem consequatur saepe?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero error, enim unde tempore ex maiores voluptatum et velit minima a ipsum nisi nemo. Molestias consequatur placeat repudiandae debitis iste odit.</p>
+         <h3 class="seta">Turismo</h3>
+         <img src="fortaleza.jpg" alt="fortaleza">
+         <p>Fortaleza é a capital do estado do Ceará, no Nordeste brasileiro. A cidade é conhecida por suas praias, com falésias vermelhas, palmeiras, dunas e lagoas.</p> <p>As tradições folclóricas da cidade podem ser vistas em apresentações de dança no Theatro José de Alencar, construção em estilo art nouveau inaugurada em 1910. Outro destaque arquitetônico é a Catedral Metropolitana, em estilo neogótico. ― <a class="link" href="https://www.google.com.br/?hl=pt-BR"> Google</a>.</p>
 
-         <h2>noticias</h2>
+         <h2>Notícias</h2>
+         <h3 class="seta">Defesa civil</h3>
+         <img src="chuva.jpg" alt="chuva">
 
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste recusandae reiciendis incidunt consequatur asperiores! Debitis nostrum accusantium consequuntur accusamus rem similique in veritatis dicta exercitationem vero. Tenetur vel illo ab.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic inventore dicta eius aliquam debitis? Modi labore aspernatur libero incidunt et magni, assumenda eius enim eum ullam impedit commodi quae dignissimos.</p>
+         <p>A chuva forte que atingiu Fortaleza desde a madrugada desta segunda-feira (19) causou alagamentos em diversos pontos da capital cearense. Além de encobrir as vias, a água invadiu casas, provocando diversos transtornos para famílias que vivem em áreas de risco.</p>
+
+         <p>Há registro de alagamentos nos bairros Aerolândia, Dom Lustosa, Presidente Kennedy, Mondubim, Planalto Ayrton Senna, Genibaú, Antônio Bezerra, entre outros.</p>
+            
+         <p>Além dos alagamentos, houve registros de outras ocorrências na cidade durante a chuva. Entre elas, uma árvore caída na Rua Damasceno Girão, no Bairro Jardim América, que bloqueou parte da via. Uma equipe da Autarquia Municipal de Trânsito está no local para auxiliar o tráfego.</p>
          
       </main>
+      <footer>
+         Site desenvolvido por <a href="https://github.com/jhorgeluiz" class="link">Jorge luiz</a>
+      </footer>
    </body>
 
 </html>
